@@ -1,0 +1,22 @@
+{
+  "tool": "ruff",
+  "status": "passed",
+  "errors": 0,
+  "warnings": 0,
+  "total_findings": 0,
+  "inline_findings": 0,
+  "remaining_findings": 0,
+  "files": [],
+  "report_path": "/repos/gembaone/backend/.quality/lint/ruff-result.json",
+  "command": [
+    "/usr/local/bin/ruff",
+    "check",
+    "/app/data/projects/b9c18cd04c02/output/2fe096843a8a/repos/gembaone/backend",
+    "--output-format",
+    "json"
+  ],
+  "exit_code": 0,
+  "stdout": "[]",
+  "stderr": "",
+  "all_findings": []
+}

@@ -1,0 +1,49 @@
+@use '@carbon/styles/scss/spacing';
+@use '@carbon/styles/scss/theme';
+
+.pageHeader {
+  margin-top: spacing.$spacing-05;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: spacing.$spacing-03;
+  margin-bottom: spacing.$spacing-05;
+}
+
+.headerLeft {
+  display: flex;
+  gap: spacing.$spacing-03;
+  align-items: center;
+}
+
+.notificationSection {
+  margin-top: spacing.$spacing-05;
+}
+
+.uploadSection {
+  margin-top: spacing.$spacing-06;
+}
+
+.sectionHeading {
+  margin-bottom: spacing.$spacing-05;
+}
+
+.mappingSelector {
+  margin-top: spacing.$spacing-05;
+}
+
+.buttonRow {
+  margin-top: spacing.$spacing-06;
+}
+
+.helperText {
+  margin-top: spacing.$spacing-05;
+}
+
+.errorMessage {
+  margin-top: spacing.$spacing-03;
+}

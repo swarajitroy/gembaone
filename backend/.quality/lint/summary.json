@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "target_path": "/repos/gembaone/backend",
+  "requested_linters": [
+    "ruff"
+  ],
+  "applicable_linters": [
+    "ruff",
+    "biome",
+    "shellcheck",
+    "shfmt"
+  ],
+  "selected_linters": [
+    "ruff"
+  ],
+  "message": "All findings, including any findings omitted from the inline response, are available in the report files listed under `report_paths`.",
+  "summary": {
+    "errors": 0,
+    "warnings": 0,
+    "total_findings": 0,
+    "inline_findings": 0,
+    "remaining_findings": 0,
+    "linters_run": 1,
+    "linters_with_issues": 0,
+    "linters_unavailable": 0
+  },
+  "by_tool": {
+    "ruff": {
+      "status": "passed",
+      "errors": 0,
+      "warnings": 0,
+      "total_findings": 0,
+      "inline_findings": 0,
+      "remaining_findings": 0,
+      "files": [],
+      "report_path": "/repos/gembaone/backend/.quality/lint/ruff-result.json"
+    }
+  },
+  "report_dir": "/repos/gembaone/backend/.quality/lint",
+  "report_paths": {
+    "summary": "/repos/gembaone/backend/.quality/lint/summary.json",
+    "ruff": "/repos/gembaone/backend/.quality/lint/ruff-result.json"
+  }
+}

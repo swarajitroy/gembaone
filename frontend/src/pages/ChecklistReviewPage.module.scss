@@ -1,0 +1,103 @@
+@use '@carbon/styles/scss/spacing';
+
+.pageHead {
+  display: flex;
+  align-items: center;
+  gap: spacing.$spacing-03;
+  flex-wrap: wrap;
+}
+
+.answerItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: spacing.$spacing-05;
+  padding: spacing.$spacing-05 0;
+  border-top: 1px solid var(--cds-border-subtle-01);
+}
+
+.answerLabel {
+  display: block;
+  color: var(--cds-text-secondary);
+  margin-top: spacing.$spacing-01;
+}
+
+.answerTags {
+  margin-top: spacing.$spacing-02;
+}
+
+.answerWhy {
+  display: block;
+  color: var(--cds-text-secondary);
+  margin-top: spacing.$spacing-02;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: spacing.$spacing-05;
+}
+
+.evidenceTile {
+  padding: spacing.$spacing-04;
+}
+
+.evidenceThumb {
+  height: 120px;
+  background: var(--cds-layer-02);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: spacing.$spacing-03;
+  border: 1px solid var(--cds-border-subtle-01);
+  color: var(--cds-text-secondary);
+}
+
+.evidenceTags {
+  display: flex;
+  gap: spacing.$spacing-02;
+  flex-wrap: wrap;
+}
+
+.evidenceFilename {
+  margin: spacing.$spacing-03 0 0;
+}
+
+.evidenceMeta {
+  margin: 0;
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+.tile {
+  padding: spacing.$spacing-06;
+}
+
+.tileHeading {
+  margin-bottom: spacing.$spacing-05;
+}
+
+.metadataList {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: spacing.$spacing-03 spacing.$spacing-05;
+  margin: 0;
+}
+
+.metadataLabel {
+  margin: 0;
+}
+
+.section {
+  margin-top: spacing.$spacing-09;
+}
+
+.tabContent {
+  padding-top: spacing.$spacing-06;
+}
+
+.roleNote {
+  margin-top: spacing.$spacing-04;
+  color: var(--cds-text-secondary);
+}

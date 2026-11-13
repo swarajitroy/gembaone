@@ -1,0 +1,98 @@
+@use '@carbon/react/scss/spacing' as *;
+
+.container {
+  padding: $spacing-07;
+  max-width: 1584px;
+  margin: 0 auto;
+}
+
+.pageHead {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-05;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: $spacing-05;
+  margin-top: $spacing-05;
+}
+
+.pageHeadLeft {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-03;
+  align-items: center;
+}
+
+.pageHeadRight {
+  display: flex;
+  gap: $spacing-03;
+  flex-wrap: wrap;
+}
+
+.helperText {
+  font-size: 12px;
+  color: var(--cds-text-secondary);
+  margin-top: -$spacing-03;
+  margin-bottom: $spacing-05;
+}
+
+.tile {
+  background: var(--cds-layer-01);
+  padding: $spacing-06;
+  margin-bottom: $spacing-06;
+}
+
+.monoCode {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+}
+
+.versionRow {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: $spacing-03;
+  padding: $spacing-04 0;
+  border-top: 1px solid var(--cds-border-subtle-01);
+
+  dt {
+    font-weight: 600;
+  }
+
+  dd {
+    margin: 0;
+    color: var(--cds-text-secondary);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+.noteText {
+  font-size: 12px;
+  color: var(--cds-text-secondary);
+  margin-top: $spacing-06;
+}
+
+.noteTextWithMargin {
+  font-size: 12px;
+  color: var(--cds-text-secondary);
+  margin-top: $spacing-04;
+}
+
+@media (max-width: 1055px) {
+  .container {
+    padding: $spacing-06 $spacing-05;
+  }
+
+  .pageHead {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pageHeadRight {
+    width: 100%;
+  }
+
+  .pageHeadRight button {
+    flex: 1;
+  }
+}

@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      args:
+        INSTALL_SPEC: .
+    env_file:
+      - ./backend/dev.env
+    environment:
+      - DATABASE_URL=sqlite:////data/app.db
+      - CORS_ORIGINS=http://localhost:80,http://localhost
+    volumes:
+      - backend-data:/data
+    ports:
+      - "9000:9000"
+    x-preview-port: 9000
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+      args:
+        BACKEND_HOST: backend
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+    x-preview-port: 80
+
+volumes:
+  backend-data:

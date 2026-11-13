@@ -1,0 +1,90 @@
+@use '@carbon/styles/scss/spacing';
+@use '@carbon/styles/scss/theme';
+
+.pageHeader {
+  margin-top: spacing.$spacing-05;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: spacing.$spacing-05;
+  margin-bottom: spacing.$spacing-05;
+}
+
+.headerLeft {
+  display: flex;
+  flex-wrap: wrap;
+  gap: spacing.$spacing-03;
+  align-items: center;
+}
+
+.heading {
+  margin: 0;
+}
+
+.downloadSection {
+  display: flex;
+  flex-direction: column;
+  gap: spacing.$spacing-03;
+}
+
+.downloadButtons {
+  display: flex;
+  gap: spacing.$spacing-03;
+}
+
+.downloadButton {
+  margin-right: spacing.$spacing-03;
+}
+
+.summarySection {
+  margin-top: spacing.$spacing-06;
+}
+
+.sectionHeading {
+  margin-bottom: spacing.$spacing-05;
+}
+
+.summaryTiles {
+  display: flex;
+  gap: spacing.$spacing-05;
+  flex-wrap: wrap;
+}
+
+.tile {
+  min-height: 112px;
+  padding: spacing.$spacing-05;
+  flex: 1;
+  min-width: 200px;
+}
+
+.tileHeader {
+  display: flex;
+  align-items: center;
+  gap: spacing.$spacing-03;
+  margin-bottom: spacing.$spacing-03;
+}
+
+.tileValue {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+}
+
+.tileIconSuccess {
+  fill: theme.$support-success;
+}
+
+.tileIconWarning {
+  fill: theme.$support-warning;
+}
+
+.tileIconError {
+  fill: theme.$support-error;
+}
+
+.rowResultsSection {
+  margin-top: spacing.$spacing-06;
+}
