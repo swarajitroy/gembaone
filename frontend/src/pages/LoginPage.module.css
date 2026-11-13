@@ -1,0 +1,5 @@
+/* LoginPage styles using Carbon tokens */
+.header {
+  background: var(--cds-background-inverse);
+  color: var(--cds-text-inverse);
+}

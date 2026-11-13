@@ -1,0 +1,17 @@
+@use '@carbon/styles/scss/spacing';
+
+.indicator {
+  border-left: 3px solid var(--cds-border-interactive);
+  padding-left: spacing.$spacing-05;
+  margin-bottom: spacing.$spacing-03;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: spacing.$spacing-03;
+}
+
+.icon {
+  color: var(--cds-border-interactive);
+}

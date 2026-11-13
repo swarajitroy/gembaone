@@ -1,0 +1,30 @@
+@use '@carbon/styles/scss/spacing';
+
+.fieldMargin {
+  margin-bottom: spacing.$spacing-06;
+}
+
+.itemLocation {
+  margin-top: spacing.$spacing-05;
+}
+
+.locationList {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: spacing.$spacing-02 spacing.$spacing-03;
+  margin: spacing.$spacing-03 0 0;
+}
+
+.locationLabel {
+  margin: 0;
+}
+
+.legend {
+  margin-bottom: spacing.$spacing-05;
+}
+
+.fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}

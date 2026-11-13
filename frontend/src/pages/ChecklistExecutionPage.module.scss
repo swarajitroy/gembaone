@@ -1,0 +1,43 @@
+@use '@carbon/styles/scss/spacing';
+
+.pageHead {
+  display: flex;
+  align-items: center;
+  gap: spacing.$spacing-03;
+  flex-wrap: wrap;
+}
+
+.headingGroup {
+  display: flex;
+  align-items: center;
+  gap: spacing.$spacing-03;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.tile {
+  padding: spacing.$spacing-06;
+}
+
+.tileHeading {
+  margin-bottom: spacing.$spacing-05;
+}
+
+.metadataList {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: spacing.$spacing-03 spacing.$spacing-05;
+  margin: 0;
+}
+
+.metadataLabel {
+  margin: 0;
+}
+
+.actions {
+  margin-top: spacing.$spacing-07;
+}
+
+.validationList {
+  margin-top: spacing.$spacing-03;
+}

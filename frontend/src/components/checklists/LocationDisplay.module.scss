@@ -1,0 +1,12 @@
+@use '@carbon/styles/scss/spacing';
+
+.locationList {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: spacing.$spacing-03 spacing.$spacing-05;
+  margin: 0;
+}
+
+.locationLabel {
+  margin: 0;
+}
